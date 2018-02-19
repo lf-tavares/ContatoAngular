@@ -1,0 +1,11 @@
+<div>
+    <h2>Meus Contatos</h2>
+    <ul class="contatos">
+      <li *ngFor="let itemContato of mockcontatos"
+      [class.selected]="itemContato === selectedContato"
+      (click)="onSelect(itemContato)">
+        <span class="badge">{{itemContato.Nome}}</span>-<span>{{itemContato.Email}} </span> 
+      </li>
+    </ul>
+</div>
+<app-contato-detalhes [meuContato]="selectedContato"></app-contato-detalhes>

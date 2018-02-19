@@ -1,0 +1,21 @@
+<div *ngIf="meuContato">
+  <hr>
+  <h2>{{meuContato.Nome | uppercase}}</h2>
+  <div>
+    <div>
+      <label>Nome:
+        <input [(ngModel)]="meuContato.Nome" placeholder="Nome">
+      </label>
+    </div>
+    <div>
+      <label>CPF:
+        <input [(ngModel)]="meuContato.CPF" placeholder="CPF">
+      </label>
+    </div> 
+    <div>
+      <label>Email:
+        <input [(ngModel)]="meuContato.Email" placeholder="Email">
+      </label>
+    </div>
+  </div>
+</div>
